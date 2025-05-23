@@ -242,19 +242,17 @@ body{
 .caption {
   font-size: 1rem;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
   margin-top: 10px;
 }
 
 
-.animate-on-scroll {
+.animate-scroll-effect {
   opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transform: translateY(100px);
+  transition: opacity 0.2s linear;
+  will-change: transform, opacity;
+  position: relative;
 }
 
-.animate-on-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 

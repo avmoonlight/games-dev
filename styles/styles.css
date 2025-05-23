@@ -81,3 +81,34 @@ body{
   font-size: 80px;
 }
 
+.botao{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #D9DADC;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #D9DADC;
+    transition: 0.5 ease;
+    user-select: none;
+}
+
+.botao:hover {
+    color: #D9DADC;
+    background: #a11f3d;
+    border: 1px solid #a11f3d;
+    text-shadow: 
+    0 0 5px #D9DADC,
+    0 0 10px #D9DADC,
+    0 0 15px #D9DADC;
+    box-shadow: 
+    0 0 5px #a11f3d,
+    0 0 20px #a11f3d,
+    0 0 50px #a11f3d,
+    0 0 100px #a11f3d;
+
+}

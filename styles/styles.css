@@ -177,47 +177,53 @@ body{
   transform: scale(0.9);
 }
 
-.about-section {
+/* FAZENDO O ABOUT?*/
+.about-fullscreen {
+  height: 100vh;
+  width: 100%;
   background: linear-gradient(to bottom, #300048, #5a0055);
   color: white;
-  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
   font-family: 'Comic Sans MS', 'Fredoka', sans-serif;
 }
 
-.about-content {
+.about-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 60px;
   flex-wrap: wrap;
-  gap: 40px;
 }
 
-.text-block {
-  flex: 1 1 400px;
-  max-width: 500px;
+.about-text {
+  flex: 1 1 500px;
 }
 
-.text-block h2 {
-  font-size: 2.5rem;
+.about-text h2 {
+  font-size: 3rem;
   margin-bottom: 20px;
   font-weight: bold;
   text-shadow: 2px 2px #000;
 }
 
-.text-block p {
-  font-size: 1.1rem;
+.about-text p {
+  font-size: 1.2rem;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .btn-contact {
   background: #ff3c3c;
   color: white;
-  padding: 12px 25px;
+  padding: 12px 28px;
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   box-shadow: 2px 2px 0 #000;
   transition: background 0.3s ease;
@@ -227,30 +233,32 @@ body{
   background: #e60000;
 }
 
-.image-block {
-  flex: 1 1 300px;
+.about-image {
+  flex: 1 1 400px;
   display: flex;
   justify-content: center;
 }
 
-.image-card {
+.white-box {
   background: white;
-  padding: 15px;
-  border-radius: 25px;
+  padding: 20px;
+  border-radius: 30px;
   text-align: center;
-  max-width: 250px;
-  box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+  max-width: 320px;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
 }
 
-.image-card img {
+.white-box img {
   width: 100%;
   border-radius: 20px;
 }
 
 .caption {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #333;
   margin-top: 10px;
 }
+
+
 

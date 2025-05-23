@@ -40,8 +40,8 @@ body{
 
 
 .logo {
-    width: 100px; /* ou qualquer tamanho desejado */
-    height: 100px;
+    height: 40px;        /* altura proporcional à faixa preta */
+    width: 40px;
     border-radius: 50%; /* deixa a imagem redonda */
     object-fit: cover;
 }

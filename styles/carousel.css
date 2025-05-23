@@ -38,3 +38,16 @@
   margin: 0 10px;
   cursor: pointer;
 }
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+  .carousel-slide {
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-slide {
+    min-width: 100%;
+  }
+}

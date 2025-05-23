@@ -177,3 +177,6 @@ body{
   transform: scale(0.9);
 }
 
+.fundo {
+    background: url("/img/imagem\ de\ fundo.png") center center/cover;
+}

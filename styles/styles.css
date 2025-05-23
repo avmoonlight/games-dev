@@ -177,6 +177,13 @@ body{
   transform: scale(0.9);
 }
 
-.fundo {
+.alinhamento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
     background: url("/img/imagem\ de\ fundo.png") center center/cover;
-}
+    color: white;
+    text-align: left;
+    justify-content: center;
+}   

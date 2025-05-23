@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const imagens = document.querySelectorAll('.galeria');
+  const imagens = document.querySelectorAll('.galeria-container img');
 
   imagens.forEach(img => {
     img.addEventListener('mouseenter', () => {

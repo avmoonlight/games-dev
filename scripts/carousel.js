@@ -26,6 +26,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Autoplay
+  setInterval(() => {
+    if (currentIndex < slides.length - 3) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    updateCarousel();
+  }, 3000); // 3 segundos
+
+  // Expandir efeito com classes existentes do home.js
+  slides.forEach(slide => {
+    const img = slide.querySelector('img');
+    img.addEventListener('mouseover', () => {
+      img.classList.add('hovered');
+      slides.forEach(otherSlide => {
+        const otherImg = otherSlide.querySelector('img');
+        if (otherImg !== img) {
+          otherImg.classList.add('dimmed');
+        }
+      });
+    });
+
+    img.addEventListener('mouseout', () => {
+      img.classList.remove('hovered');
+      slides.forEach(slide => {
+        const otherImg = slide.querySelector('img');
+        otherImg.classList.remove('dimmed');
+      });
+    });
+  });
+
   window.addEventListener('resize', updateCarousel);
   updateCarousel();
 });

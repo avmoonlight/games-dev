@@ -120,22 +120,3 @@ body{
   gap: 20px; 
 }
 
-.container img {
-  width: 220px;
-  height: 440px;
-  object-fit: cover;
-  border-radius: 15px;
-  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.container img.hovered {
-  transform: scale(1.2);
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
-
-.container img.dimmed {
-  filter: brightness(0.6);
-  transform: scale(0.9);
-}

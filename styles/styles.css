@@ -99,17 +99,17 @@ body{
 
 .botao:hover {
     color: #D9DADC;
-    background: #a11f3d;
-    border: 1px solid #a11f3d;
+    background: #691629;
+    border: 1px solid #691629;
     text-shadow: 
     0 0 5px #D9DADC,
     0 0 10px #D9DADC,
     0 0 15px #D9DADC;
     box-shadow: 
-    0 0 5px #a11f3d,
-    0 0 20px #a11f3d,
-    0 0 50px #a11f3d,
-    0 0 100px #a11f3d;
+    0 0 5px #691629,
+    0 0 20px #691629,
+    0 0 50px #691629,
+    0 0 100px #691629;
 
 }
 

@@ -1,17 +1,19 @@
-.about {
+.about-fullscreen {
   height: 100vh;
   width: 100%;
   background: url(/img/imagem-de-fundo.png) no-repeat center center;
-  background-size: cover;
+  background-size: cover; 
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px 20px;
+  box-sizing: border-box;
   font-family: 'Comic Sans MS', 'Fredoka', sans-serif;
 }
 
-.about__container {
+
+.about-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,45 +23,56 @@
   flex-wrap: wrap;
 }
 
-.about__text {
+.about-text {
   flex: 1 1 500px;
 }
 
-.about__text h2 {
+.about-text h2 {
   font-size: 3rem;
   margin-bottom: 20px;
   font-weight: bold;
   text-shadow: 2px 2px #000;
 }
 
-.about__text p {
+.about-text p {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 30px;
 }
 
-.about__image {
+
+
+.about-image {
   flex: 1 1 400px;
   display: flex;
   justify-content: center;
 }
 
-.about__caption {
+.caption {
   font-size: 1rem;
   font-weight: bold;
   color: #ffffff;
   margin-top: 10px;
 }
 
-.about__image-box {
-  background-color: rgba(0, 0, 0, 0.6);
+
+.animate-scroll-effect {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.2s linear;
+  will-change: transform, opacity;
+  position: relative;
+}
+
+.rounded-image-box {
+  background-color: rgba(0, 0, 0, 0.6); /* Faixa preta com transparência */
   padding: 20px;
   border-radius: 20px;
   text-align: center;
   flex: 1 1 300px;
 }
 
-.about__image-box img {
+.rounded-image-box img {
   max-width: 100%;
   height: auto;
   display: block;

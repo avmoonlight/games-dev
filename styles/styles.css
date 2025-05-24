@@ -259,3 +259,42 @@ body{
   margin: 0 auto;
 }
 
+.footer {
+  margin-top: 40px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__container {
+  width: 1170px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo {
+  margin-bottom: 24px;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__icon a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footer__rights {
+  color: white;
+  margin-top: 24px;
+  font-size: 0.9rem;
+  text-align: center;
+}

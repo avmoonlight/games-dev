@@ -1,0 +1,37 @@
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.header__container {
+  width: 1170px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.header__logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header__nav {
+  display: flex;
+  gap: 16px;
+}
+
+.header__link {
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+}
+
+.header__link:hover {
+  color: #691629;
+}

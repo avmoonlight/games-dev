@@ -181,7 +181,8 @@ body{
 .about-fullscreen {
   height: 100vh;
   width: 100%;
-  background: url(/img/imagem-de-fundo.png);
+  background: url(/img/imagem-de-fundo.png) no-repeat center center;
+  background-size: cover; 
   color: white;
   display: flex;
   align-items: center;
@@ -190,6 +191,7 @@ body{
   box-sizing: border-box;
   font-family: 'Comic Sans MS', 'Fredoka', sans-serif;
 }
+
 
 .about-container {
   display: flex;
@@ -253,6 +255,21 @@ body{
   transition: opacity 0.2s linear;
   will-change: transform, opacity;
   position: relative;
+}
+
+.rounded-image-box {
+  background-color: rgba(0, 0, 0, 0.6); /* Faixa preta com transparência */
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  flex: 1 1 300px;
+}
+
+.rounded-image-box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 

@@ -220,20 +220,7 @@ body{
   margin-bottom: 30px;
 }
 
-.btn-contact {
-  background: #ff3c3c;
-  color: white;
-  padding: 12px 28px;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  box-shadow: 2px 2px 0 #000;
-  transition: background 0.3s ease;
-}
 
-.btn-contact:hover {
-  background: #e60000;
-}
 
 .about-image {
   flex: 1 1 400px;
@@ -271,5 +258,4 @@ body{
   display: block;
   margin: 0 auto;
 }
-
 

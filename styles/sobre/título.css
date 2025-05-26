@@ -1,11 +1,15 @@
-.bg-section{
-    background-color: #131424;
+.imagem1 {
+    height: 100vh;
+    background: url("/img/gif_gatinho.gif") center center/cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    height: 100vh;
 }
+
 
 .text {
   font-family: "Oswald", sans-serif;

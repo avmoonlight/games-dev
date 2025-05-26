@@ -1,17 +1,27 @@
+.imagem1 {
+    height: 100vh;
+    background: url("/img/gif_gatinho.gif") center center/cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
 .titulo {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  color: #D9DADC;
+  color: #000000;
   font-size: 80px;
-}
-
-.desenvolvedores__titulo {
   text-align: center;
   font-size: 2rem;
   margin: 2rem 0;
 }
+
 
 .desenvolvedores__wrapper {
   display: flex;
@@ -51,6 +61,7 @@
   text-align: left;
   opacity: 0;
   transition: opacity 0.3s ease;
+  color: antiquewhite; 
 }
 
 .dev-card.active .overlay {

@@ -1,18 +1,19 @@
-
-
-#valores {
-  padding: 60px 20px;
+.valores-section {
+  background-color: #dc8ecf; /* fundo rosa claro */
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
 }
 
-.container {
+.valores-section .container {
   max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
 }
 
-.titulo {
+.valores-section .titulo {
   text-align: center;
   font-size: 2rem;
-  color: #1a1a1a;
+  color: #1a1a2e;
   margin-bottom: 40px;
 }
 
@@ -48,24 +49,4 @@
   font-size: 1rem;
   color: #444444;
   line-height: 1.5;
-}
-
-.valores-section {
-  width: 100%;
-  padding: 60px 20px;
-  background-color: #8b8d95; /* fundo azul-claro que vai até atrás dos cards */
-  box-sizing: border-box;
-}
-
-.valores-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.valores-section .titulo {
-  text-align: center;
-  font-size: 2rem;
-  color: #1a1a2e;
-  margin-bottom: 40px;
 }

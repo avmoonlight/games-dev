@@ -3,6 +3,7 @@
 @import url('/styles/layout/botoesetxt.css');
 @import url('/styles/sobre/título.css');
 @import url('/styles/sobre/quem_Somos.css');
+@import url('/styles/sobre/desenvolvedores.css');
 
 * {
   margin: 0;

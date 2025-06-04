@@ -1,0 +1,62 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.back {
+    background: url('/games-dev-main/img/ondas.gif') no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-card {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0); 
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #000000;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}

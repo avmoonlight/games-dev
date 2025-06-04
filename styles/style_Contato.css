@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('/games-dev-main/styles/contato/paralax.css');
+@import url('/games-dev-main/styles/contato/forms.css');
+@import url('/games-dev-main/styles/layout/header.css');
+@import url('/games-dev-main/styles/layout/botoesetxt.css');
+@import url('/games-dev-main/styles/layout/footer.css');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}

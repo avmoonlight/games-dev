@@ -1,0 +1,26 @@
+/* ===================================
+   LAYOUT - CONTAINERS & POSICIONAMENTO
+=================================== */
+.container {
+  width: 1170px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gap-20 {
+  gap: 20px;
+}

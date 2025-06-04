@@ -1,0 +1,24 @@
+/* */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('./layout/posicionamento.css');
+@import url('/styles/layout/botoesetxt.css');
+@import url('./home/about.css');
+@import url('./home/carousel.css');
+@import url('./home/galeria.css');
+@import url('./home/paralax.css');
+@import url('./layout/footer.css');
+@import url('./layout/header.css');
+@import url('/styles/responsividade/responsivo.css');
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}

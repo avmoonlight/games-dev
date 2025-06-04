@@ -1,0 +1,53 @@
+
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  min-width: calc(100% / 3);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel-controls {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+  .carousel-slide {
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-slide {
+    min-width: 100%;
+  }
+}

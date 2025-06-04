@@ -1,0 +1,52 @@
+.valores-section {
+  background-color: #dc8ecf; /* fundo rosa claro */
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.valores-section .container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.valores-section .titulo {
+  text-align: center;
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card .title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #1a1a1a;
+}
+
+.card .description {
+  font-size: 1rem;
+  color: #444444;
+  line-height: 1.5;
+}

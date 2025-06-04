@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+.textos {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #D9DADC;
+  font-size: 80px;
+}
+
+.botao{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #D9DADC;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #D9DADC;
+    transition: 0.5 ease;
+    user-select: none;
+}
+
+.botao:hover {
+    color: #D9DADC;
+    background: #691629;
+    border: 1px solid #691629;
+    text-shadow: 
+    0 0 5px #D9DADC,
+    0 0 10px #D9DADC,
+    0 0 15px #D9DADC;
+    box-shadow: 
+    0 0 5px #691629,
+    0 0 20px #691629,
+    0 0 50px #691629,
+    0 0 100px #691629;
+
+}
+
+.textos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+}

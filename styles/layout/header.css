@@ -1,0 +1,44 @@
+.bg-header{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav > a, span{
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+}
+
+.nav > a:hover{
+    color: #691629;
+}
+
+.container{
+    width: 1170px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+
+
+.logo {
+    height: 40px;        /* altura proporcional à faixa preta */
+    width: 40px;
+    border-radius: 50%; /* deixa a imagem redonda */
+    object-fit: cover;
+}
+
+.nav{
+    display: flex;
+    gap: 16px;
+}
+
+.links{
+    color: #D9DADC !important;
+}

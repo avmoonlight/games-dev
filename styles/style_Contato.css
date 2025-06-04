@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-@import url('/games-dev-main/styles/contato/paralax.css');
-@import url('/games-dev-main/styles/contato/forms.css');
-@import url('/games-dev-main/styles/layout/header.css');
-@import url('/games-dev-main/styles/layout/botoesetxt.css');
-@import url('/games-dev-main/styles/layout/footer.css');
-
-
+@import url('/styles/contato/paralax.css');
+@import url('/styles/contato/forms.css');
+@import url('/styles/layout/header.css');
+@import url('/styles/layout/botoesetxt.css');
+@import url('/styles/layout/footer.css');
 
 * {
   margin: 0;

@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-image: url("/img/fundo/fundo_OUDN.png");
+  color: white;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Fica lá atrás */
+ 
+}
+  
+
+/* Container principal */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  min-height: 100vh;
+}
+
+/* Texto da esquerda */
+.texto-esquerda {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+}
+
+.texto-esquerda h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.texto-esquerda p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Imagem da direita */
+.imagem-direita {
+  flex: 1;
+  text-align: center;
+}
+
+.imagem-direita img {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #0ff;
+}
+
+.descricao-imagem {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Botão neon */
+.botao-neon {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 15px 40px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.botao-neon::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: linear-gradient(45deg, transparent, #0ff, transparent);
+  animation: brilho 2s linear infinite;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.botao-neon span {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes brilho {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(100%, 100%); }
+}

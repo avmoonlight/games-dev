@@ -5,7 +5,7 @@
 }
 
 .back {
-    background: url('/img/gif_onda.gif') no-repeat center center;
+    background: url('../../img/gif_onda.gif') no-repeat center center;
     background-size: cover;
     width: 100vw;
     min-height: 100vh; 

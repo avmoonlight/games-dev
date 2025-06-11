@@ -1,4 +1,4 @@
-/* styles/sobre/quem_Somos.css */
+
 
 .about-fullscreen {
   min-height: 100vh; 
@@ -21,8 +21,6 @@
   max-width: 1200px;
   width: 100%;
   flex-wrap: wrap;
-  
-  /* ALTERAÇÃO PRINCIPAL: Reduzindo drasticamente o espaçamento */
   gap: 20px; 
 }
 
@@ -63,14 +61,11 @@
   will-change: transform, opacity;
 }
 
-
-/* === REGRAS DE RESPONSIVIDADE (permanecem as mesmas) === */
-
 @media (max-width: 992px) {
   .about-container {
     
     text-align: center;
-    gap: 40px; /* Mantemos um gap maior na vertical para respirar */
+    gap: 40px; 
   }
 }
 

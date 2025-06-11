@@ -98,7 +98,7 @@
 
   .dev-card.active {
     min-width: 400px;
-    flex: 1; /* O flex:5 pode ser muito grande, ajustamos para um crescimento mais sutil */
+    flex: 1; 
   }
 }
 

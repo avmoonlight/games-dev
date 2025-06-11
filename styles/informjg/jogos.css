@@ -10,27 +10,27 @@ body {
 }
 
 .body1 {
-  background-image: url("/img/fundo/fundojg1.png");
+  background-image: url("img/fundo/fundojg1.png");
 }
 
 .body2 {
-  background-image: url("/img/fundo/fundojg2.png");
+  background-image: url("img/fundo/fundojg2.png");
 }
 
 .body3 {
-  background-image: url("/img/fundo/fundojg3.png");
+  background-image: url("img/fundo/fundojg3.png");
 }
 
 .body4 {
-  background-image: url("/img/fundo/fundojg4.png");
+  background-image: url("img/fundo/fundojg4.png");
 }
 
 .body5 {
-  background-image: url("/img/fundo/fundo_OUDN.png");
+  background-image: url("img/fundo/fundo_OUDN.png");
 }
 
 .body6 {
-  background-image: url("/img/fundo/fundo_RDP.png");
+  background-image: url("img/fundo/fundo_RDP.png");
 }
 
 

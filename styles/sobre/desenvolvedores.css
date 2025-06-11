@@ -1,20 +1,17 @@
-/* styles/sobre/desenvolvedores.css */
 
-/* Adicionado um container geral para a seção */
 .desenvolvedores {
   padding: 60px 0;
-  background-color: #1a1a2e; /* Cor de fundo para a seção */
-}
+  background-color: #1a1a2e; }
 
 .desenvolvedores .titulo {
   font-family: "Oswald", sans-serif;
-  color: #ffffff; /* Cor do título */
-  font-size: 2.5rem; /* Tamanho do título */
+  color: #ffffff; 
+  font-size: 2.5rem; 
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.desenvolvedores .titulo:nth-of-type(2) { /* Seleciona o segundo título (parágrafo) */
+.desenvolvedores .titulo:nth-of-type(2) { 
   font-size: 1.2rem;
   font-weight: 400;
   color: #D9DADC;
@@ -28,17 +25,17 @@
   max-width: 1200px;
   margin: 0 auto;
   height: 400px;
-  overflow: hidden; /* Esconde o que passar do container */
+  overflow: hidden; 
 }
 
 .dev-card {
   position: relative;
-  flex: 1; /* Todos os cards começam com o mesmo tamanho */
+  flex: 1; 
   overflow: hidden;
   transition: flex 0.5s ease-in-out;
   cursor: pointer;
-  border-radius: 10px; /* Adiciona bordas arredondadas */
-  margin: 0 5px; /* Pequeno espaçamento entre os cards */
+  border-radius: 10px; 
+  margin: 0 5px; 
 }
 
 .dev-card img {
@@ -49,7 +46,7 @@
 }
 
 .dev-card.active {
-  flex: 5; /* O card ativo expande */
+  flex: 5; 
 }
 
 .dev-card .overlay {
@@ -57,7 +54,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); /* Gradiente suave */
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); 
   padding: 1rem;
   text-align: left;
   opacity: 0;
@@ -81,32 +78,25 @@
 }
 
 
-/* === REGRAS DE RESPONSIVIDADE === */
 
 @media (max-width: 992px) {
   .desenvolvedores__wrapper {
-    /* Habilita o scroll horizontal */
     overflow-x: auto;
-    /* Remove o overflow hidden para o scroll funcionar */
     overflow-y: hidden;
-    /* Garante que os itens não quebrem a linha */
     flex-wrap: nowrap;
-    /* Esconde a barra de scroll visualmente (em navegadores que suportam) */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
   }
   .desenvolvedores__wrapper::-webkit-scrollbar {
-    display: none; /* Chrome, Safari and Opera */
+    display: none; /
   }
 
   .dev-card {
-    /* Define uma largura mínima para cada card no modo scroll */
     min-width: 250px;
     flex-grow: 1;
   }
 
   .dev-card.active {
-    /* No modo scroll, o card ativo também pode ter uma largura mínima maior */
     min-width: 400px;
     flex: 1; /* O flex:5 pode ser muito grande, ajustamos para um crescimento mais sutil */
   }

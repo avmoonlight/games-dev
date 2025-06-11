@@ -59,11 +59,9 @@ button {
     cursor: pointer;
 }
 
-/* Media Queries para Responsividade */
 @media (max-width: 768px) {
     .back {
         padding: 15px;
-        /* min-height já está definido, então não precisamos repetir aqui */
         align-items: flex-start;
         padding-top: 50px;
     }
@@ -92,7 +90,7 @@ button {
     input,
     textarea {
         padding: 12px;
-        font-size: 16px; /* Evita zoom no iOS */
+        font-size: 16px; 
         border-radius: 6px;
     }
     
@@ -166,7 +164,6 @@ button {
     }
 }
 
-/* Melhorias de acessibilidade e UX */
 button:hover {
     background-color: #f0f0f0;
     transition: background-color 0.3s ease;
@@ -182,7 +179,6 @@ textarea:focus {
     outline-offset: 2px;
 }
 
-/* Para telas muito altas, o 'align-items: center' original funciona bem */
 @media (min-height: 800px) {
     .back {
         align-items: center;

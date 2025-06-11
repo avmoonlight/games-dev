@@ -1,10 +1,8 @@
-/* styles/home/carousel.css */
-
 .carousel-wrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 1200px; /* Aumentado para acomodar melhor */
+  max-width: 1200px; 
   margin: auto;
 }
 
@@ -14,7 +12,7 @@
 }
 
 .carousel-slide {
-  min-width: calc(100% / 3); /* Padrão: 3 slides visíveis */
+  min-width: calc(100% / 3); 
   box-sizing: border-box;
   padding: 10px;
 }
@@ -22,7 +20,7 @@
 .carousel-img {
   width: 100%;
   height: auto;
-  aspect-ratio: 9/16; /* Garante a proporção das capas */
+  aspect-ratio: 9/16; 
   object-fit: cover;
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -57,21 +55,20 @@
   background-color: #222;
 }
 
-/* === INÍCIO DAS REGRAS DE RESPONSIVIDADE === */
 
 @media (max-width: 1024px) {
   .carousel-slide {
-    min-width: calc(100% / 2); /* Telas médias: 2 slides visíveis */
+    min-width: calc(100% / 2);
   }
 }
 
 @media (max-width: 600px) {
   .carousel-slide {
-    min-width: 100%; /* Telas pequenas: 1 slide visível */
+    min-width: 100%; 
     padding: 5px;
   }
   .carousel-img:hover {
-    transform: scale(1.02); /* Reduz o efeito em telas menores */
+    transform: scale(1.02); 
   }
   .carousel-button {
     padding: 8px 16px;

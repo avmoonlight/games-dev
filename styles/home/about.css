@@ -1,5 +1,3 @@
-/* styles/home/about.css */
-
 .about-fullscreen {
   min-height: 100vh;
   width: 100%;
@@ -9,17 +7,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 20px; /* Aumentado o padding vertical para mais respiro */
+  padding: 60px 20px; 
   box-sizing: border-box;
   font-family: 'Comic Sans MS', 'Fredoka', sans-serif;
 }
 
 .about-container {
   display: flex;
-  /* A CHAVE ESTÁ AQUI: Alinha os itens (bloco de texto e bloco de imagem) verticalmente no centro */
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo se não houver espaço */
+  flex-wrap: wrap;
   gap: 60px;
   max-width: 1200px;
   width: 100%;
@@ -28,8 +25,8 @@
 }
 
 .about-text {
-  flex: 1; /* Permite que o bloco de texto cresça */
-  min-width: 300px; /* Largura mínima para o texto antes de quebrar */
+  flex: 1; 
+  min-width: 300px; 
 }
 
 .about-text h2 {
@@ -50,9 +47,9 @@
   padding: 20px;
   border-radius: 20px;
   text-align: center;
-  flex-shrink: 0; /* Impede que o bloco da imagem encolha */
+  flex-shrink: 0; 
   width: 100%;
-  max-width: 350px; /* Define um tamanho máximo para o bloco da imagem */
+  max-width: 350px; 
 }
 
 .rounded-image-box img {
@@ -68,22 +65,21 @@
   margin-top: 10px;
 }
 
-/* === REGRAS DE RESPONSIVIDADE === */
 
-/* Para telas menores que 800px, os itens ficarão empilhados */
+
 @media (max-width: 800px) {
   .about-container {
-    flex-direction: column; /* Empilha os itens */
+    flex-direction: column; 
     gap: 40px;
   }
   .about-text {
-    text-align: center; /* Centraliza o texto quando empilhado */
+    text-align: center; 
   }
 }
 
 @media (max-width: 480px) {
   .about-fullscreen {
-    padding: 40px 15px; /* Reduz o padding em telas muito pequenas */
+    padding: 40px 15px; 
   }
   .about-text h2 {
     font-size: 2.2rem;

@@ -179,6 +179,7 @@ textarea:focus {
     outline-offset: 2px;
 }
 
+
 @media (min-height: 800px) {
     .back {
         align-items: center;

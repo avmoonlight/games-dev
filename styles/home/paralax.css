@@ -8,6 +8,8 @@
     align-items: center;
     justify-content: center;
     color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .textos {
@@ -17,4 +19,7 @@
   font-style: normal;
   color: #D9DADC;
   font-size: 80px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+

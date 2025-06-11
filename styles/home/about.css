@@ -1,30 +1,35 @@
+/* styles/home/about.css */
+
 .about-fullscreen {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: url(/img/imagem-de-fundo.png) no-repeat center center;
-  background-size: cover; 
+  background-size: cover;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 60px 20px; /* Aumentado o padding vertical para mais respiro */
   box-sizing: border-box;
   font-family: 'Comic Sans MS', 'Fredoka', sans-serif;
 }
 
-
 .about-container {
   display: flex;
+  /* A CHAVE ESTÁ AQUI: Alinha os itens (bloco de texto e bloco de imagem) verticalmente no centro */
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo se não houver espaço */
+  gap: 60px;
   max-width: 1200px;
   width: 100%;
-  gap: 60px;
-  flex-wrap: wrap;
+
+  
 }
 
 .about-text {
-  flex: 1 1 500px;
+  flex: 1; /* Permite que o bloco de texto cresça */
+  min-width: 300px; /* Largura mínima para o texto antes de quebrar */
 }
 
 .about-text h2 {
@@ -40,12 +45,20 @@
   margin-bottom: 30px;
 }
 
+.rounded-image-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  flex-shrink: 0; /* Impede que o bloco da imagem encolha */
+  width: 100%;
+  max-width: 350px; /* Define um tamanho máximo para o bloco da imagem */
+}
 
-
-.about-image {
-  flex: 1 1 400px;
-  display: flex;
-  justify-content: center;
+.rounded-image-box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .caption {
@@ -55,26 +68,27 @@
   margin-top: 10px;
 }
 
+/* === REGRAS DE RESPONSIVIDADE === */
 
-.animate-scroll-effect {
-  opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 0.2s linear;
-  will-change: transform, opacity;
-  position: relative;
+/* Para telas menores que 800px, os itens ficarão empilhados */
+@media (max-width: 800px) {
+  .about-container {
+    flex-direction: column; /* Empilha os itens */
+    gap: 40px;
+  }
+  .about-text {
+    text-align: center; /* Centraliza o texto quando empilhado */
+  }
 }
 
-.rounded-image-box {
-  background-color: rgba(0, 0, 0, 0.6); /* Faixa preta com transparência */
-  padding: 20px;
-  border-radius: 20px;
-  text-align: center;
-  flex: 1 1 300px;
-}
-
-.rounded-image-box img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+@media (max-width: 480px) {
+  .about-fullscreen {
+    padding: 40px 15px; /* Reduz o padding em telas muito pequenas */
+  }
+  .about-text h2 {
+    font-size: 2.2rem;
+  }
+  .about-text p {
+    font-size: 1rem;
+  }
 }

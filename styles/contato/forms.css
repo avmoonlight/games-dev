@@ -8,10 +8,11 @@
     background: url('/img/gif_onda.gif') no-repeat center center;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh; /* ALTERAÇÃO PRINCIPAL AQUI */
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .form-card {
@@ -56,4 +57,134 @@ button {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .back {
+        padding: 15px;
+        /* min-height já está definido, então não precisamos repetir aqui */
+        align-items: flex-start;
+        padding-top: 50px;
+    }
+    
+    .form-card {
+        width: 100%;
+        max-width: 400px;
+        padding: 25px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+    
+    .form-group {
+        margin-bottom: 18px;
+    }
+    
+    label {
+        font-size: 15px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input,
+    textarea {
+        padding: 12px;
+        font-size: 16px; /* Evita zoom no iOS */
+        border-radius: 6px;
+    }
+    
+    textarea {
+        min-height: 100px;
+        resize: vertical;
+    }
+    
+    button {
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 6px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .back {
+        padding: 10px;
+        padding-top: 30px;
+    }
+    
+    .form-card {
+        width: 100%;
+        padding: 20px 15px;
+        border-radius: 6px;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    label {
+        font-size: 14px;
+    }
+    
+    input,
+    textarea {
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    textarea {
+        min-height: 80px;
+    }
+    
+    button {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .form-card {
+        padding: 15px 10px;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    input,
+    textarea,
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Melhorias de acessibilidade e UX */
+button:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+/* Para telas muito altas, o 'align-items: center' original funciona bem */
+@media (min-height: 800px) {
+    .back {
+        align-items: center;
+    }
 }

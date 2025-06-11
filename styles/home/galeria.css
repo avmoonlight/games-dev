@@ -1,17 +1,21 @@
+/* styles/home/galeria.css */
+
 .galeria {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  padding: 50px 20px; /* Adicionado padding lateral */
   background-color: rgb(0, 0, 0);
+  text-align: center; /* Garante que tudo dentro fique centralizado */
 }
 
 .galeria-logo {
   font-size: 70px;
   font-weight: bold;
-  margin: 20px;
+  margin-bottom: 20px; /* Ajustado para margin-bottom */
   font-family: "Micro 5", cursive;
   color: aliceblue;
+  transition: font-size 0.3s ease; /* Transição suave para o tamanho da fonte */
 }
 
 .galeria-container {
@@ -20,24 +24,24 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px;
+  width: 100%; /* Garante que o container ocupe o espaço disponível */
 }
 
-.galeria-container img {
-  width: 220px;
-  height: 440px;
-  object-fit: cover;
-  border-radius: 15px;
-  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+/* Regras de hover removidas daqui, pois o carrossel controla as imagens */
+
+/* === INÍCIO DAS REGRAS DE RESPONSIVIDADE === */
+
+@media (max-width: 768px) {
+  .galeria-logo {
+    font-size: 50px; /* Reduz a fonte do título */
+  }
+  .galeria {
+    padding: 40px 15px;
+  }
 }
 
-.galeria-container img.hovered {
-  transform: scale(1.2);
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
-
-.galeria-container img.dimmed {
-  filter: brightness(0.6);
-  transform: scale(0.9);
+@media (max-width: 480px) {
+  .galeria-logo {
+    font-size: 35px; /* Reduz ainda mais a fonte */
+  }
 }

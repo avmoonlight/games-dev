@@ -1,3 +1,5 @@
+/* styles/sobre/título.css */
+
 .imagem1 {
     height: 100vh;
     background: url("/img/gif_gatinho.gif") center center/cover;
@@ -8,16 +10,8 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-}
-
-
-.text {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  color: #D9DADC;
-  font-size: 80px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .textos-container {
@@ -27,24 +21,34 @@
   gap: 20px; 
 }
 
-.animate-scroll-effect {
-  opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 0.2s linear;
-  will-change: transform, opacity;
-  position: relative;
+/* O seletor .textos foi usado no seu HTML, então usei ele ao invés de .text */
+.textos {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #D9DADC;
+  font-size: 80px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.rounded-image-box {
-  background-color: rgba(0, 0, 0, 0.6); /* Faixa preta com transparência */
-  padding: 20px;
-  border-radius: 20px;
-  text-align: center;
-  flex: 1 1 300px;
+
+/* === REGRAS DE RESPONSIVIDADE === */
+
+@media (max-width: 768px) {
+  .imagem1 {
+    /* Em telas menores, a seção não precisa ocupar a tela inteira */
+    min-height: 60vh;
+    height: auto;
+  }
+  .textos {
+    font-size: 50px; /* Reduz o tamanho do título */
+  }
 }
-.rounded-image-box h1 {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+
+@media (max-width: 480px) {
+  .textos {
+    font-size: 38px; /* Reduz ainda mais */
+  }
 }

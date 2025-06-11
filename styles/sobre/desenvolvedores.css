@@ -1,27 +1,26 @@
-.imagem1 {
-    height: 100vh;
-    background: url("/img/gif_gatinho.gif") center center/cover;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: color;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+/* styles/sobre/desenvolvedores.css */
+
+/* Adicionado um container geral para a seção */
+.desenvolvedores {
+  padding: 60px 0;
+  background-color: #1a1a2e; /* Cor de fundo para a seção */
 }
 
-.titulo {
+.desenvolvedores .titulo {
   font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  color: #000000;
-  font-size: 80px;
+  color: #ffffff; /* Cor do título */
+  font-size: 2.5rem; /* Tamanho do título */
   text-align: center;
-  font-size: 2rem;
-  margin: 2rem 0;
+  margin-bottom: 1rem;
 }
 
+.desenvolvedores .titulo:nth-of-type(2) { /* Seleciona o segundo título (parágrafo) */
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #D9DADC;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
 
 .desenvolvedores__wrapper {
   display: flex;
@@ -29,15 +28,17 @@
   max-width: 1200px;
   margin: 0 auto;
   height: 400px;
-  overflow: hidden;
+  overflow: hidden; /* Esconde o que passar do container */
 }
 
 .dev-card {
   position: relative;
-  flex: 1;
+  flex: 1; /* Todos os cards começam com o mesmo tamanho */
   overflow: hidden;
   transition: flex 0.5s ease-in-out;
   cursor: pointer;
+  border-radius: 10px; /* Adiciona bordas arredondadas */
+  margin: 0 5px; /* Pequeno espaçamento entre os cards */
 }
 
 .dev-card img {
@@ -48,7 +49,7 @@
 }
 
 .dev-card.active {
-  flex: 5;
+  flex: 5; /* O card ativo expande */
 }
 
 .dev-card .overlay {
@@ -56,12 +57,12 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); /* Gradiente suave */
   padding: 1rem;
   text-align: left;
   opacity: 0;
   transition: opacity 0.3s ease;
-  color: antiquewhite; 
+  color: #ffffff; 
 }
 
 .dev-card.active .overlay {
@@ -71,9 +72,57 @@
 .dev-card .overlay h3 {
   margin: 0;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .dev-card .overlay p {
   margin: 0.5rem 0 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+}
+
+
+/* === REGRAS DE RESPONSIVIDADE === */
+
+@media (max-width: 992px) {
+  .desenvolvedores__wrapper {
+    /* Habilita o scroll horizontal */
+    overflow-x: auto;
+    /* Remove o overflow hidden para o scroll funcionar */
+    overflow-y: hidden;
+    /* Garante que os itens não quebrem a linha */
+    flex-wrap: nowrap;
+    /* Esconde a barra de scroll visualmente (em navegadores que suportam) */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .desenvolvedores__wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+
+  .dev-card {
+    /* Define uma largura mínima para cada card no modo scroll */
+    min-width: 250px;
+    flex-grow: 1;
+  }
+
+  .dev-card.active {
+    /* No modo scroll, o card ativo também pode ter uma largura mínima maior */
+    min-width: 400px;
+    flex: 1; /* O flex:5 pode ser muito grande, ajustamos para um crescimento mais sutil */
+  }
+}
+
+@media (max-width: 768px) {
+  .desenvolvedores .titulo {
+    font-size: 2rem;
+  }
+  .desenvolvedores .titulo:nth-of-type(2) {
+    font-size: 1rem;
+  }
+  .desenvolvedores__wrapper {
+    height: 350px; /* Reduz a altura dos cards em telas menores */
+  }
+  .dev-card {
+    min-width: 200px;
+  }
 }

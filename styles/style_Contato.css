@@ -2,7 +2,7 @@
 @import url('/styles/contato/paralax.css');
 @import url('/styles/contato/forms.css');
 @import url('/styles/layout/header.css');
-@import url('/styles/layout/botoesetxt.css');
+@import url('../styles/layout/botoesetxt.css');
 @import url('/styles/layout/footer.css');
 
 * {

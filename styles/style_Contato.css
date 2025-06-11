@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-@import url('/styles/contato/paralax.css');
-@import url('/styles/contato/forms.css');
-@import url('/styles/layout/header.css');
-@import url('../styles/layout/botoesetxt.css');
-@import url('/styles/layout/footer.css');
+@import url('./contato/paralax.css');
+@import url('./contato/forms.css');
+@import url('./layout/header.css');
+@import url('./layout/botoesetxt.css');
+@import url('./layout/footer.css');
 
 * {
   margin: 0;

@@ -40,7 +40,6 @@
     color: #D9DADC !important;
 }
 
-/* Media Queries para Responsividade */
 @media (max-width: 1200px) {
     .container {
         width: 100%;

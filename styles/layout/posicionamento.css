@@ -22,7 +22,6 @@
   gap: 20px;
 }
 
-/* Media Queries para Responsividade */
 @media (max-width: 1200px) {
   .container {
     width: 100%;
@@ -66,7 +65,7 @@
   }
 }
 
-/* Classes utilitárias responsivas adicionais */
+
 .container-full {
   width: 100%;
   padding: 20px;

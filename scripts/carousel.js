@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Autoplay
+
   setInterval(() => {
     if (currentIndex < slides.length - 3) {
       currentIndex++;
@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
       currentIndex = 0;
     }
     updateCarousel();
-  }, 3000); // 3 segundos
+  }, 3000); 
 
-  // Expandir efeito com classes existentes do home.js
+
   slides.forEach(slide => {
     const img = slide.querySelector('img');
     img.addEventListener('mouseover', () => {

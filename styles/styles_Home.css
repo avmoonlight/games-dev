@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url('./layout/posicionamento.css');
-@import url('/styles/layout/botoesetxt.css');
+@import url('./layout/botoesetxt.css');
 @import url('./home/about.css');
 @import url('./home/carousel.css');
 @import url('./home/galeria.css');
